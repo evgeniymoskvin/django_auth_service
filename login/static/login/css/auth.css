@@ -1,0 +1,563 @@
+@font-face {
+    font-family: 'Rosatom_light';
+    src: url('../fonts/rosatom/Rosatom-Light.woff2') format('woff2'),
+    url('../fonts/rosatom/Rosatom-Light.woff') format('woff'),
+    url('../fonts/rosatom/Rosatom-Light.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Rosatom_regular';
+    src: url('../fonts/rosatom/Rosatom-Regular.woff2') format('woff2'),
+    url('../fonts/rosatom/Rosatom-Regular.woff') format('woff'),
+    url('../fonts/rosatom/Rosatom-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Rosatom_bold';
+    src: url('../fonts/rosatom/Rosatom-Bold.woff2') format('woff2'),
+    url('../fonts/rosatom/Rosatom-Bold.woff') format('woff'),
+    url('../fonts/rosatom/Rosatom-Bold.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.content-fade {
+    scroll-behavior: smooth;
+    animation: fade-in 0.7s ease-in-out;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.text-72px-bold {
+    font-size: 72px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-48px-bold {
+    font-size: 48px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-36px-bold {
+    font-size: 36px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-36px-regular {
+    font-size: 36px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-36px-light {
+    font-size: 36px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-32px-bold {
+    font-size: 32px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-32px-regular {
+    font-size: 32px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-32px-light {
+    font-size: 32px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-24px-bold {
+    font-size: 24px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-24px-regular {
+    font-size: 24px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-24px-light {
+    font-size: 24px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-22px-bold {
+    font-size: 22px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-22px-regular {
+    font-size: 22px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-22px-light {
+    font-size: 22px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+
+.text-20px-bold {
+    font-size: 20px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-20px-regular {
+    font-size: 20px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-20px-light {
+    font-size: 20px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+
+.text-18px-bold {
+    font-size: 18px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-18px-regular {
+    font-size: 18px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-18px-light {
+    font-size: 18px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-16px-light {
+    font-size: 16px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-16px-regular {
+    font-size: 16px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-16px-bold {
+    font-size: 16px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-14px-bold {
+    font-size: 14px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-14px-regular {
+    font-size: 14px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-14px-light {
+    font-size: 14px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+.text-12px-bold {
+    font-size: 12px;
+    font-family: "Rosatom_bold", serif;
+    color: #1D222A;
+}
+
+.text-12px-regular {
+    font-size: 12px;
+    font-family: "Rosatom_regular", serif;
+    color: #1D222A;
+}
+
+.text-12px-light {
+    font-size: 12px;
+    font-family: "Rosatom_light", serif;
+    color: #1D222A;
+}
+
+
+.dashed_text {
+    /*font-size: 25px;*/
+    /*text-decoration: none;*/
+    /*border-bottom: 1px dashed rgb(108, 172, 228);*/
+    cursor: pointer;
+    color: rgb(108, 172, 228);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.dashed_text:hover {
+    color: #025EA1;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+
+.input_text {
+    width: auto;
+    height: 45px;
+    padding: 12px 20px;
+    /*width: 100%;*/
+    border: 1px solid rgb(108, 172, 228);
+    border-radius: 8px;
+    box-shadow: 2px 4px 11px -3px rgba(2, 94, 161, 0.45);
+    font-size: 18px;
+    font-family: "Rosatom_regular", serif;
+}
+
+.input_text:disabled {
+    border: 1px solid rgb(176, 181, 185);
+    box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);
+    color: grey;
+}
+
+.input_text[type="text"]:disabled {
+    border: 1px solid rgb(176, 181, 185);
+    box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);
+    color: grey;
+}
+
+
+.input_text_clearance {
+    width: auto;
+    height: 45px;
+    /*padding: 12px 20px;*/
+    /*width: 100%;*/
+    border: 1px solid rgb(108, 172, 228);
+    border-radius: 8px;
+    /*box-shadow: 2px 4px 11px -3px rgba(2, 94, 161, 0.45);*/
+    font-size: 20px;
+    font-family: "Rosatom_regular", serif;
+}
+
+.input_text_clearance_paddings {
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.input_text_clearance:disabled {
+    border: 1px solid rgb(176, 181, 185);
+    /*box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);*/
+    color: grey;
+}
+
+.input_text_clearance:disabled {
+    border: 1px solid rgb(176, 181, 185);
+    /*box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);*/
+    background-color: rgba(142, 143, 143, 0.15);
+}
+
+.input_text_clearance[type="text"]:disabled {
+    border: 1px solid rgb(176, 181, 185);
+    /*box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);*/
+    color: grey;
+}
+
+.input_text_change_lists {
+    width: 67px;
+    height: 22px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+
+.button_blue {
+    min-width: 200px;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgb(108, 172, 228);
+    font-size: 18px;
+    font-family: "Rosatom_regular", serif;
+    color: white;
+    transition-duration: .15s;
+}
+
+.button_blue:disabled {
+    border: 1px solid rgb(217, 220, 222);
+    background-color: rgb(217, 220, 222);
+    /*box-shadow: 2px 4px 11px -3px rgba(149, 150, 150, 0.45);*/
+    color: white;
+}
+
+.button_blue_center {
+    min-width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_blue:hover {
+    box-shadow: 2px 4px 11px -3px rgba(2, 94, 161, 0.45);
+}
+
+.button_blue:hover:disabled {
+    box-shadow: 0 0 rgba(77, 77, 77, 0.45);
+}
+
+.button_blue:active {
+    color: white;
+    background: rgb(93, 148, 196);
+    box-shadow: 2px 4px 11px -3px rgba(2, 94, 161, 0.45);
+
+}
+
+.button_blue:active:disabled {
+    background: rgba(77, 77, 77, 0.45);
+}
+
+.select_shadows {
+
+}
+
+.select_shadows:hover {
+    box-shadow: 2px 4px 11px -3px rgba(2, 94, 161, 0.45);
+}
+
+
+.link_dot_decoration {
+    text-decoration: none;
+    cursor: pointer;
+    /*color: ;*/
+    color: rgb(108, 172, 228);
+    border-bottom: 1px dashed rgb(108, 172, 228);
+    transition-duration: .3s;
+}
+
+.link_dot_decoration:hover {
+    color: rgb(176, 57, 128);
+    border-bottom: 1px solid rgb(176, 57, 128);
+}
+
+
+
+/*border: 0;*/
+
+
+.hover-mouse {
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.hover-mouse:hover {
+    background-color: #F2F2F2;
+}
+
+
+
+.all_transition {
+    position: sticky;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*Kerberos*/
+
+  .kerberos-page {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 16px;
+    }
+
+    .kerberos-card {
+        width: 100%;
+        max-width: 480px;
+        padding: 42px 38px;
+        border-radius: 20px;
+        background: #ffffff;
+        border: 1px solid #e8edf3;
+        box-shadow: 0 15px 50px rgba(20, 40, 70, 0.08);
+        text-align: center;
+        animation: cardAppear 0.7s ease both;
+    }
+
+    .kerberos-icon {
+        width: 76px;
+        height: 76px;
+        margin: 0 auto 25px;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #edf4ff;
+        position: relative;
+    }
+
+    .kerberos-icon svg {
+        width: 36px;
+        height: 36px;
+        stroke: #2764c5;
+        stroke-width: 1.7;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .kerberos-icon::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        border: 1px solid rgba(39, 100, 197, 0.18);
+        border-radius: 26px;
+        animation: iconPulse 2.5s ease-out infinite;
+    }
+
+    .kerberos-title {
+        font-family: "Rosatom_bold", serif;
+        color: #172b4d;
+        font-size: 25px;
+        font-weight: 700;
+        /*letter-spacing: -0.5px;*/
+        margin-bottom: 12px;
+    }
+
+    .kerberos-description {
+        font-family: "Rosatom_light", serif;
+        color: #718096;
+        font-size: 14px;
+        /*line-height: 1.7;*/
+        margin-bottom: 30px;
+    }
+
+    .kerberos-status {
+        font-family: "Rosatom_light", serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11px;
+        padding: 15px;
+        background: #f6f8fb;
+        border-radius: 12px;
+        color: #52647c;
+        font-size: 13px;
+    }
+
+    .kerberos-loader {
+        font-family: "Rosatom_light", serif;
+        width: 17px;
+        height: 17px;
+        border: 2px solid #d5e3f7;
+        border-top-color: #2764c5;
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+        flex-shrink: 0;
+    }
+
+    .kerberos-footer {
+        font-family: "Rosatom_light", serif;
+        margin-top: 25px;
+        color: #a0aaba;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    .kerberos-secure {
+        font-family: "Rosatom_light", serif;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 22px;
+        color: #6c8a79;
+        font-size: 12px;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes iconPulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(1.18);
+            opacity: 0;
+        }
+    }
+
+    @keyframes cardAppear {
+        from {
+            opacity: 0;
+            transform: translateY(15px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .kerberos-card {
+            padding: 35px 22px;
+        }
+
+        .kerberos-title {
+            font-size: 22px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .kerberos-card,
+        .kerberos-icon::after,
+        .kerberos-loader {
+            animation: none;
+        }
+    }

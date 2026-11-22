@@ -1,0 +1,55 @@
+{% extends  "login/base.html" %}
+
+{% block title %}
+    Вход в систему
+{% endblock %}
+
+{% block content %}
+<div class="kerberos-page">
+    <div class="kerberos-card">
+
+        <div class="kerberos-icon">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 3 4.5 6v5.5c0 4.5 3.2 7.8 7.5 9.5 4.3-1.7 7.5-5 7.5-9.5V6L12 3Z"/>
+                <path d="m9 12 2 2 4-4"/>
+            </svg>
+        </div>
+
+        <h2 class="kerberos-title">
+            Вход в корпоративную систему
+        </h2>
+
+        <p class="kerberos-description">
+            Для доступа используется единая корпоративная
+            учётная запись Active Directory.
+            Дополнительный ввод логина и пароля не требуется.
+        </p>
+
+        {% if request.user.is_authenticated %}
+
+            <div class="kerberos-status">
+                <span style="color: #26965d; font-size: 17px;">●</span>
+                Вы уже авторизованы в системе
+            </div>
+
+        {% else %}
+
+            <div class="kerberos-status">
+                <span class="kerberos-loader"></span>
+                Ожидание автоматической аутентификации Windows...
+            </div>
+
+        {% endif %}
+
+        <div class="kerberos-secure">
+            <span>✓</span>
+            Корпоративная система аутентификации
+        </div>
+
+        <div class="kerberos-footer">
+            ISTOK · AUTHENTICATION SERVICE
+        </div>
+
+    </div>
+</div>
+{% endblock %}

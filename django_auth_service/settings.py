@@ -39,6 +39,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+
+    'identity.kerberos.middleware.KerberosAuthenticationMiddleware',
+
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -102,10 +105,14 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+#
+# LOGIN_URL = "login"
+# LOGIN_REDIRECT_URL = "/"
+# LOGOUT_REDIRECT_URL = "login"
 
-LOGIN_URL = "login"
+LOGIN_URL = "/"
 LOGIN_REDIRECT_URL = "/"
-LOGOUT_REDIRECT_URL = "login"
+LOGOUT_REDIRECT_URL = "/"
 
 # что бы создать ключ надо выполнить python generate_rsa_key.py, перед этим необходимо
 # в INSTALLED_APPS добавить oauth2_provider
@@ -161,3 +168,17 @@ AD_RECEIVE_TIMEOUT = 5
 # AD_USE_SSL = True
 # AD_CONNECT_TIMEOUT = 5
 # AD_RECEIVE_TIMEOUT = 5
+
+
+# Настройки Kerberos-аутентификации
+KERBEROS_ENABLED = False
+# Домен Active Directory и Kerberos Realm
+KERBEROS_REALM = "EL-SPB.LOCAL"
+# SPN сервиса Auth Service
+KERBEROS_SERVICE_PRINCIPAL = (
+    "HTTP/auth.el-spb.local@EL-SPB.LOCAL"
+)
+# Путь к keytab внутри Docker-контейнера
+KERBEROS_KEYTAB = "/run/secrets/auth_service.keytab"
+# Разрешённый механизм аутентификации
+KERBEROS_ALLOWED_MECHANISM = "kerberos"
