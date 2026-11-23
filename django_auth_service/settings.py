@@ -144,6 +144,16 @@ OAUTH2_PROVIDER = {
 SESSION_COOKIE_DOMAIN = None
 SESSION_COOKIE_NAME = 'testsessionid'
 
+# SESSION_COOKIE_SECURE = True # Cookie сессии передаётся только по HTTPS.
+# SESSION_COOKIE_HTTPONLY = True # Cookie недоступна из JavaScript (document.cookie). Защита от XSS-кражи сессии.
+#
+# CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_HTTPONLY = False
+# SESSION_COOKIE_SAMESITE = "Lax" # Cookie не отправляется при cross-site запросах (POST, iframe), но отправляется при обычном переходе по ссылке. (Возможно не надо)
+#
+# SESSION_COOKIE_AGE = 28800 # Время жизни сессии в секундах (8 × 3600).
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True # Сессия истекает при закрытии браузера. Работает в связке с SESSION_COOKIE_AGE: сессия живёт
+
 # Active Directory
 # Включение AD-аутентификации
 AD_ENABLED = False
