@@ -183,7 +183,9 @@ AD_RECEIVE_TIMEOUT = 5
 # Настройки Kerberos-аутентификации
 KERBEROS_ENABLED = False
 # Домен Active Directory и Kerberos Realm
-KERBEROS_REALM = "EL-SPB.LOCAL"
+KERBEROS_ALLOWED_REALMS = [
+    "EL-SPB.LOCAL",
+]
 # SPN сервиса Auth Service
 KERBEROS_SERVICE_PRINCIPAL = (
     "HTTP/auth.el-spb.local@EL-SPB.LOCAL"
